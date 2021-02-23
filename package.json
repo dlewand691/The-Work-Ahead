@@ -19,7 +19,7 @@
     "jstransformer-markdown-it": "^2.1.0",
     "lazysizes": "^5.3.0",
     "motion-ui": "^2.0.3",
-    "swiper": "^6.4.14",
+    "swiper": "^6.4.15",
     "what-input": "^5.2.10"
   }
 }
