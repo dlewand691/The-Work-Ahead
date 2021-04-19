@@ -1,4 +1,4 @@
-// @codekit-prepend 'jquery/dist/jquery.min.js'
+// @codekit-prepend 'jquery/dist/jquery.js'
 // @codekit-prepend 'foundation-sites/dist/js/foundation.min.js'
 
 
@@ -53,7 +53,7 @@
 // @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.toggler.min.js'
 // @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.tooltip.min.js'
 // @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.min.js'
-// @codekit-prepend 'motion-ui/dist/motion-ui.min.js'
+// @codekit-prepend 'motion-ui/dist/motion-ui.js'
 
 
 // ======================================================================
@@ -70,6 +70,11 @@
 
 
 $(document).foundation();
+
+// LOADER
+// $(window).load(function() {
+//     $("body").addClass('all-loaded');
+// });
 
 // ======================================================================
 //  ██████  ██████  ███    ███ ██████   ██████  ███    ██ ███████ ███    ██ ████████ ███████
@@ -185,7 +190,7 @@ $(document).ready(function() {
 //      ██ ██ ███ ██ ██ ██      ██      ██   ██
 // ███████  ███ ███  ██ ██      ███████ ██   ██
 // ======================================================================
-var mySwiper = new Swiper(".swiper-container", {
+var swiper = new Swiper(".swiper-container", {
   loop: true,
   autoHeight: true,
   centeredSlides: true,

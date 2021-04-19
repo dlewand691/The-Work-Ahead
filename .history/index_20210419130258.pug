@@ -1,0 +1,21 @@
+extends _template.pug
+include _mixins.pug
+
+block vars
+  - var pageTitle = "The Work Ahead"
+  - var metaDescription= "CHANGE_ME"
+  - var metaKeywords= "CHANGE_ME"
+
+block content
+  include includes/_hero.pug
+  .content-visibility
+    include includes/_insights.pug
+    include includes/_text-intro.pug
+    include includes/_stat.pug
+    include includes/_report.pug
+    include includes/_regions.pug
+    include includes/_reports-regional.pug
+    include includes/_contact.pug
+    include includes/_team.pug
+
+block append extraScripts

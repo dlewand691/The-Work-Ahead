@@ -1,0 +1,69 @@
+include ../../_COG-Framework-2020/pug/_navigation.pug
+include ../../_COG-Framework-2020/pug/_footer.pug
+
+block vars
+
+doctype html
+html.no-js(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible", content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="description" content=metaDescription)
+    meta(name="keywords" content=metaKeywords)
+    title!= pageTitle
+
+    //- ======================================================================
+    //- CSS
+    //- ======================================================================
+    //- link(rel="stylesheet", href="css/app.css", media="screen")
+    //- script(defer src="js/min/app-min.js")
+    //- link(rel="preload" href="css/styles.pure.css" as="style")
+    //- link(rel="stylesheet" href="css/app.css" media="print" onload="this.media='all'")
+    link(rel="stylesheet" href="css/app.css" media="screen")
+
+    //- ======================================================================
+    //- FONT PRELOAD
+    //- ======================================================================
+    link(rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="fonts/Cognizant-Sans/CognizantSans-Heavy.woff2")
+    link(rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="fonts/Cognizant-Sans/CognizantSans-Regular.woff2")
+    link(rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="fonts/Cognizant-Sans/CognizantSans-Bold.woff2")
+    link(rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="fonts/Cognizant-Sans/CognizantSans-Light.woff2")
+    link(rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="fonts/Cognizant-Icons-FONT/fonts/Cognizant-Icons.woff2")
+    link(rel="preload" as="font" crossorigin="anonymous" type="font/woff" href="fonts/Cognizant-Icons-FONT/fonts/Cognizant-Icons.woff")
+
+    //- ======================================================================
+    //- FAVICONS
+    //- ======================================================================
+    link(rel="apple-touch-icon", sizes="180x180", href="favicons/apple-touch-icon.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="favicons/favicon-32x32.png")
+    link(rel="icon", type="image/png", sizes="194x194", href="favicons/favicon-194x194.png")
+    link(rel="icon", type="image/png", sizes="192x192", href="favicons/android-chrome-192x192.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="favicons/favicon-16x16.png")
+    link(rel="manifest", href="favicons/site.webmanifest")
+    link(rel="mask-icon", href="favicons/safari-pinned-tab.svg", color="#0033a0")
+    link(rel="shortcut icon", href="favicons/favicon.ico")
+    meta(name="msapplication-TileColor", content="#0033a0")
+    meta(name="msapplication-TileImage", content="favicons/mstile-144x144.png")
+    meta(name="msapplication-config", content="favicons/browserconfig.xml")
+    meta(name="theme-color", content="#ffffff")
+
+    block extraStyles
+
+  body
+    nav.theme-default.z1
+      include ../_COG-Framework-2020/pug/includes/global/_nav-secondary-links.pug
+    nav.theme-default.z1
+      include ../_COG-Framework-2020/pug/includes/global/_nav-primary-links.pug
+
+    .overflow-hidden
+      block content
+
+    footer.theme-default
+      include ../_COG-Framework-2020/pug/includes/global/_footer-icons-bar.pug
+      include ../_COG-Framework-2020/pug/includes/global/_footer-links.pug
+
+    a#scrollUp(href="#", title="Back to top")
+    script(src="js/min/app-min.js")
+
+    block extraScripts

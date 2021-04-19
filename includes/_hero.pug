@@ -1,0 +1,59 @@
+include ../_mixins.pug
+
+//- .w100vw.hero-background.bg-size-cover.bg-pos-center-center(data-interchange="[../../images/hero-bg-mobile.jpg, small],[../../images/hero-bg-medium.jpg, medium],[../../images/hero-bg-big.jpg, large]")
+  .relative.wh100
+    .absolute.hero-scroll.flex-container.text-white.pb2
+//- .hero-wrapper.text-white.h100vh.flex-container.align-center-middle.bg-size-cover.bg-pos-center-center(data-interchange="[images/hero-bg-mobile.jpg, small],[images/hero-bg-medium.jpg, medium],[images/hero-bg-big.jpg, large]")
+  .grid-container.text-center.hero-content
+    .cell.py2.medium-py7.large-py2.xlarge-py5.large-mt4
+      h1.extra-large.m0.inline-block(data-aos="fade-left" data-aos-delay="0" data-aos-duration="500") Mastering 
+      h1.extra-large.m0.inline-block(data-aos="fade-right" data-aos-delay="300" data-aos-duration="500") Digital’s 
+      h1.extra-large.m0.inline-block(data-aos="fade-left" data-aos-delay="600" data-aos-duration="500") Second 
+      h1.extra-large.m0.inline-block(data-aos="fade-right" data-aos-delay="900" data-aos-duration="500") Wave
+    .cell.align-bottom
+      p.m0.text-center Let’s go
+      img.mt1.hero-icon(src="images/arrow.svg")
+
+.h70vh.py4.large-py8.text-white.flex-container.align-center-middle.video-background.bg-size-cover.bg-pos-center-center(data-interchange="[images/hero-bg-mobile.jpg, small],[images/transparent.gif, medium],[images/transparent.gif, large]")
+  video.hide-for-small-only(playsinline autoplay preload="auto" loop muted poster="images/twa-bg-header-video.jpg" width="1920" height="600")
+    source(src="images/twa-bg-header-video.mp4" type="video/mp4")
+    source(src="images/twa-bg-header-video.webm" type="video/webm")
+    source(src="images/twa-bg-header-video.ogg" type="video/ogg")
+  .grid-container.text-center.hero-content
+    .grid-x.align-center
+      .cell.medium-11.flex-container.align-top.show-for-medium(data-aos="fade-down" data-aos-delay="1800" data-aos-duration="500")
+        img.lazyload(data-src="images/1px-white.gif" style="width: 1.25rem; height: 5rem;")
+        img.lazyload(data-src="images/1px-white.gif" style="width: 100%; height: 1.25rem;")
+        img.lazyload(data-src="images/1px-white.gif" style="width: 1.25rem; height: 5rem;")
+      .cell.large-10
+        h1.extra-large.m0.inline-block(data-aos="fade-left" data-aos-delay="0" data-aos-duration="750") Mastering 
+        h1.extra-large.m0.inline-block(data-aos="fade-right" data-aos-delay="300" data-aos-duration="750") digital 
+        h1.extra-large.m0.inline-block(data-aos="fade-left" data-aos-delay="600" data-aos-duration="750") for 
+        h1.extra-large.m0.inline-block(data-aos="fade-right" data-aos-delay="900" data-aos-duration="750") tomorrow
+      .cell.align-bottom.pt2.mbn2.relative(data-aos="fade-down" data-aos-delay="2500" data-aos-duration="500")
+        a.link-coverAll(href="#letsgo" data-smooth-scroll data-offset="10")
+          h5.text-normal.m0.text-center Let’s go
+          img.lazyload.mt1.hero-icon(data-src="images/arrow.svg")
+      .cell.medium-11.flex-container.align-bottom.show-for-medium(data-aos="fade-up" data-aos-delay="1800" data-aos-duration="500")
+        img.lazyload(data-src="images/1px-white.gif" style="width: 1.25rem; height: 5rem;")
+        img.lazyload(data-src="images/1px-white.gif" style="width: 100%; height: 1.25rem;")
+        img.lazyload(data-src="images/1px-white.gif" style="width: 1.25rem; height: 5rem;")
+
+//- .absolute.pos-top.pos-left.w100.h100vh.bg-size-cover.z-1(data-interchange="[../../images/hero-bg-mobile.jpg, small],[../../images/hero-bg-medium.jpg, medium],[../../images/hero-bg-big.jpg, large]")
+//- .h100vh.text-white.text-center
+//-   .grid-container.flex-container.align-stretch
+//-     .grid-x.grid-padding-x
+//-       .cell.align-self-bottom
+//-         h1.pb6 Insights to Master the Digital Economy
+//-       .cell.align-self-middle
+//-         p.m0 Let's go
+//-         img.hero-icon(src="../../images/arrow.svg")
+
+//- .bg-blue.mtn6.w100.h100vh.text-white.flex-container.align-center-middle.bg-size-cover.bg-pos-bottom-center(data-interchange="[../../images/hero-bg-mobile.jpg, small],[../../images/hero-bg-medium.jpg, medium],[../../images/hero-bg-big.jpg, large]")
+//-   .grid-container.wh100
+//-     .grid-x.grid-padding-x.text-center.flex-container.align-stretch.h100
+//-       .cell.align-self-bottom
+//-         h1 Insights To Master The Digital Economy
+//-       .cell.align-self-bottom.pb2
+//-         p.m0 Let's go
+//-         img.hero-icon(src="../../images/arrow.svg")

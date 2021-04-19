@@ -1,0 +1,54 @@
+include ../_mixins.pug
+
+.preview-background.py2.medium-py6.text-white
+  .grid-container
+    .grid-x.grid-padding-x.align-middle
+      .cell.auto
+        p.mb-half.text-spacing-1 A Regional View
+        h3 How the World Will Work
+      .cell.auto
+        // ======================================================================
+        // ██████   ██████  ██████  ██████  ███████ ██████
+        // ██   ██ ██    ██ ██   ██ ██   ██ ██      ██   ██
+        // ██████  ██    ██ ██████  ██   ██ █████   ██████
+        // ██   ██ ██    ██ ██   ██ ██   ██ ██      ██   ██
+        // ██████   ██████  ██   ██ ██████  ███████ ██   ██
+        // ======================================================================
+        .grid-x.show-for-medium
+          .cell.large-11.flex-container.align-top
+            img.lazyload(data-src="images/1px-white.gif" style="width: 100%; height: 1.25rem;")
+            img.lazyload(data-src="images/1px-white.gif" style="width: 1.25rem; height: 3rem;")
+  .grid-container.medium-pb1
+    .grid-x.grid-margin-x.grid-margin-y.small-up-1.medium-up-3
+      +reports-regional({
+        title: "Find out why digital technologies and an adaptable workforce will power the work ahead in the U.S. and Canada.",
+        linkText: "READ REPORT",
+        image: "images/twa-report-americas.jpg",
+        url: "https://www.cognizant.com/whitepapers/the-work-ahead-modernizing-north-america-2-0-codex6157.pdf"
+      })(data-aos="fade-left")
+      +reports-regional({
+        title: "Read how Europe’s leaders are embracing the future of work and technology’s defining role.",
+        linkText: "READ REPORT",
+        image: "images/twa-report-europe.jpg",
+        url: "https://www.cognizant.com/whitepapers/the-work-ahead-europes-digital-ambition-scales-codex6155.pdf"
+      })(data-aos="fade")
+      +reports-regional({
+        title: "Learn how Asia Pacific and the Middle East are balancing machine-driven and human-centric work.",
+        linkText: "READ REPORT",
+        image: "images/twa-report-asia.jpg",
+        url: "https://www.cognizant.com/whitepapers/the-work-ahead-asia-drives-digitals-future-codex6156.pdf"
+      })(data-aos="fade-right")
+
+  .grid-container
+    // ======================================================================
+    // ██████   ██████  ██████  ██████  ███████ ██████
+    // ██   ██ ██    ██ ██   ██ ██   ██ ██      ██   ██
+    // ██████  ██    ██ ██████  ██   ██ █████   ██████
+    // ██   ██ ██    ██ ██   ██ ██   ██ ██      ██   ██
+    // ██████   ██████  ██   ██ ██████  ███████ ██   ██
+    // ======================================================================
+    .grid-x.show-for-medium
+      .cell.pr3.flex-container.align-bottom
+        img.lazyload(data-src="images/1px-white.gif" style="width: 1.25rem; height: 3.25rem;")
+        img.lazyload(data-src="images/1px-white.gif" style="width: 100%; height: 1.25rem;")
+        img.lazyload(data-src="images/1px-white.gif" style="width: 1.25rem; height: 3.25rem;")

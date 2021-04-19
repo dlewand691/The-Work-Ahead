@@ -1,0 +1,20 @@
+@import './utils';
+
+.hero {
+  &-wrapper {
+    @include breakpoint(medium) {
+      // min-height: 1200px;
+    }
+  }
+
+  &-scroll {
+    flex-direction: column;
+    left          : 0;
+    right         : 0;
+    bottom        : 2%;
+  }
+
+  &-icon {
+    transform: rotate(90deg);
+  }
+}
